@@ -40,12 +40,14 @@
     </div>
 
     <header class="header">
-        <h1 class="h1"><a href="#inicio" class="a">Gabriel Cabrera Sirlopu</a></h1>
+        <a class="logo" href="#inicio">
+            <img class="img" src="assets/logo-gab.png" alt="Mi logotipo">
+        </a>
         <nav class="nav">
             <ul class="ul">
                 <li class="li"><a href="#inicio" class="a">Inicio</a></li>
-                <li class="li"><a href="#works" class="a">Works</a></li>
-                <li class="li"><a href="#about" class="a">About</a></li>
+                <li class="li"><a href="#works" class="a">Trabajos</a></li>
+                <li class="li"><a href="#about" class="a">Sobre mi</a></li>
             </ul>
         </nav>
     </header>
@@ -60,9 +62,18 @@
 
                 <ul class="ul">
                     <li class="li"><a href="#" class="a" title="Github">Visitar mi Linkedin</a></li>
-                    <li class="li"><a href="#" class="a" title="Linkedin">Visitar mi Github</a></li>
+                    <li class="li"><a href="https://github.com/gab617" class="a" title="Linkedin">Visitar mi Github</a></li>
+                </ul>
+
+                <ul class="ul lista-tecnologias">
+                    <li><img src="assets/html-icon.png" alt="img html"></li>
+                    <li><img src="assets/css-icon.png" alt="img css"></li>
+                    <li><img src="assets/js-icon.png" alt="img js"></li>
+                    <li><img src="assets/react-icon.png" alt="img react"></li>
+                    <li><img src="assets/express-icon.png" alt="img express"></li>
                 </ul>
             </section>
+
         </div>
 
         <section class="seccion works" id="works">
@@ -93,12 +104,13 @@
 
         <section class="seccion about" id="about">
             <h2 class="h2">Sobre mi</h2>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nam. Perferendis laudantium
-                quas doloribus eius!</p>
-            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi temporibus pariatur,
-                voluptatibus quas dignissimos minus!</p>
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, perspiciatis! Illum incidunt
-                cupiditate quia exercitationem.</p>
+            <p>Me especializo en:</p>
+            <ul>
+                <li>Desarrollo web front-end y back-end</li>
+                <li>Creación de aplicaciones web interactivas</li>
+                <li>Integración de API y bases de datos</li>
+                <li>Diseño y optimización de sitios web responsivos</li>
+            </ul>
 
             <ul class="rrss">
                 <li class="li">
@@ -130,13 +142,13 @@
             <input type="email" id="email" name="email" required>
 
             <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="message">
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </div>
 
-            <button type="submit">Enviar</button>
         </form>
     </main>
-
-
 
     <footer class="footer">
         <span class="span">Gabriel Cabrera Sirlopu</span>

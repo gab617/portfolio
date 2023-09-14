@@ -20,7 +20,8 @@ formulario.addEventListener('submit', async (event) => {
         });
 
         if (response.ok) {
-            console.log('Datos enviados y guardados correctamente.');
+            console.log('Datos enviados');
+            console.log(response.status)
             formulario.reset();
         } else {
             console.error('Error al enviar los datos al servidor.');
@@ -29,3 +30,6 @@ formulario.addEventListener('submit', async (event) => {
         console.error('Error de red: :DDDDDD', error);
     }
 });
+
+
+
