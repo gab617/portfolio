@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100&family=Rancho&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 
 <body>
@@ -56,13 +56,13 @@
         <div class="seccion" id="inicio">
 
             <section class="section info">
-
                 <h2 class="h2">Gabriel Cabrera Sirlopu</h2>
                 <h3 class="h3">Developer</h3>
 
                 <ul class="ul">
                     <li class="li"><a href="#" class="a" title="Github">Visitar mi Linkedin</a></li>
-                    <li class="li"><a href="https://github.com/gab617" class="a" title="Linkedin">Visitar mi Github</a></li>
+                    <li class="li"><a href="https://github.com/gab617" class="a" title="Linkedin">Visitar mi Github</a>
+                    </li>
                 </ul>
 
                 <ul class="ul lista-tecnologias">
@@ -81,24 +81,39 @@
             <p class="p">Aqui estan mis proyectos realizados</p>
 
             <div class="grid">
-                <article class="article">
-                    <a class="a" href="https://giphy-react-front-617.vercel.app/" title="trabajo1">
-                        <figure class="figure">
-                            <img src="assets/light.jpg" alt="Imagen" class="img" loading="lazy">
-                        </figure>
-                        <h4 class="h4">GIPHY</h4>
-                    </a>
+                <div class="article-contendor">
+                    <article class="article">
+                        <a class="a" href="https://giphy-react-front-617.vercel.app/" title="trabajo1">
+                            <img src="assets/giph1.png" alt="Imagen" class="img" loading="lazy">
+                            <h4 class="h4">GIPHY</h4>
+                        </a>
+                    </article>
+                    <p>
+                        Frontend: Desarrollado con React. <br>
+                        Backend: Utiliza Express para la gestión de solicitudes.<br>
+                        Comunicación: Integracion a la API de Giphy.<br>
+                        Enfoque: Proporciona una experiencia de búsqueda de gifs.<br>
+                        Asi como tambien manejo de peticiones, props enviadas por peticiones. Y Cantidad de datos que se piden al servidor
+                    </p>
+                </div>
 
-                </article>
-                <article class="article">
-                    <a class="a" href="https://dota2-app-react-js-front.vercel.app/" title="trabajo1">
-                        <figure class="figure">
-                            <img src="assets/mpanadas.jpg" alt="Imagen" class="img" loading="lazy">
-                        </figure>
-                        <h4 class="h4">Dota2 APP</h4>
-                    </a>
+                <div class="article-contendor">
+                    <article class="article">
+                        <a class="a" href="https://dota2-app-front-617.vercel.app/" title="trabajo1">
+                            <img src="assets/dota.png" alt="Imagen" class="img" loading="lazy">
+                            <h4 class="h4">Dota2 APP</h4>
+                        </a>
+                    </article>
+                    <p>
+                        Frontend: Desarrollado con React. <br>
+                        Backend: Utiliza Express para la gestión de solicitudes.<br>
+                        Comunicación: Realiza peticiones HTTP a una API definida por mi.<br>
+                        Los datos estan guardado en un servidor externo.<br>  
+                        Enfoque: Organizacion, filtrado y renderizado organizado de datos segun su categoria.<br>
+                        
+                    </p>
+                </div>
 
-                </article>
             </div>
         </section>
 
@@ -153,7 +168,6 @@
     <footer class="footer">
         <span class="span">Gabriel Cabrera Sirlopu</span>
     </footer>
-
 
     <script src="script.js"></script>
 </body>
