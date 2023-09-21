@@ -1,5 +1,9 @@
 const formulario = document.getElementById('contact-form');
 
+fetch ("http://localhost:3000/api/ping")
+.then (res => res.status)
+.then (status => console.log(status))
+
 formulario.addEventListener('submit', async (event) => {
     event.preventDefault();
     

@@ -202,17 +202,18 @@ main {
 }
 
 #inicio>section>ul.ul.lista-tecnologias>li:nth-child(5) {
-    background-color: rgba(255, 255, 255, 0.058);
+    background-color: rgba(255, 255, 255, 0.973);
     /* Fondo con luz tenue */
     border-radius: 100px;
     /* Borde redondeado */
-    box-shadow: rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(188, 14, 14);
     /* Sombra para destacar */
 }
 
 .seccion .lista-tecnologias li img {
     width: 50%;
 }
+
 
 .seccion .h2 {
     font-weight: 600;
@@ -327,7 +328,6 @@ main {
 }
 
 .article img {
-    /* Asegura que la ima   gen se ajuste al ancho del artículo */
 }
 
 
