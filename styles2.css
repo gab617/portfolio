@@ -6,6 +6,8 @@
 body {
     font-family: 'Playfair Display', serif;
     background-color: black;
+    width: 90%;
+    margin: 0 auto; /* Esto centra el contenido horizontalmente */
 }
 
 li {
@@ -132,7 +134,7 @@ main {
 
 .seccion {
     /* width: 100%; */
-    min-height: 80vh;
+    min-height: 70vh;
     margin: 1em 0;
     padding: 1em;
     display: flex;
@@ -296,8 +298,6 @@ main {
 
 .works .p {}
 
-
-
 .article-contendor {
     height: auto;
     /* Cambia el color de fondo según tus preferencias */
@@ -327,26 +327,15 @@ main {
     /* Agrega espacio entre el artículo y el encabezado h2 */
 }
 
-.article img {
-}
-
-
-
-.about {}
-
-.about .h2 {
-    margin: 0 0 1rem;
-}
-
-.about .p {
-    max-width: 40em;
-    /* background: lime; */
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0 0 1em;
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about .rrss {
+    margin-top: 2em;
     width: 100%;
     /* background: lightgreen; */
 
@@ -356,18 +345,43 @@ main {
     align-items: center;
 }
 
-.about .li {
-    list-style: none;
-    /* background: orange; */
-    margin: 0 1em;
-}
-
-.about .li .a {}
-
 .about .svg {
     width: 3em;
     height: 3em;
+    margin-right: 1em;
     /* background: red; */
+}
+
+#about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+.about1 {
+    width: 50%;
+    height: 100%;
+    margin: 1.5em;
+}
+
+.about1 li, p{
+    font-size: 2em;
+    margin-top: 0;
+
+
+}
+
+.about2 {
+    height: 100%;
+    width: 50%;
+    margin: 1.5em;
+}
+
+.about2 p {
+    font-size: 1.9em;
+    margin-bottom: 1em;
 }
 
 .footer {
