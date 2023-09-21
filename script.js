@@ -1,6 +1,6 @@
 const formulario = document.getElementById('contact-form');
 
-fetch ("http://localhost:3000/api/ping")
+fetch ("https://dota2-6174.onrender.com/api/ping")
 .then (res => res.status)
 .then (status => console.log(status))
 
