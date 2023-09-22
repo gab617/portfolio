@@ -1,4 +1,8 @@
 const formulario = document.getElementById('contact-form');
+/* Pings a servidor donde se alojan los proyectos que se muestran */
+fetch ("https://dota2-6174.onrender.com/api/ping")
+.then (res => res.status)
+.then (status => console.log(status))
 
 fetch ("https://dota2-6174.onrender.com/api/ping")
 .then (res => res.status)
