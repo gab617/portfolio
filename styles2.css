@@ -564,4 +564,10 @@ button[type="submit"]:hover {
     .about2{
         width: 100%;
     }
+    .circulos .circulo {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        filter: blur(60px);
+    }
 }
