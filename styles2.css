@@ -541,11 +541,13 @@ button[type="submit"]:hover {
 @media screen and (max-width: 550px) {
     .seccion {
         min-height: 70vh;
+        text-align: center;
     }
 
     .section .h2 {
-        font-size: 2.5em;
+        font-size: 1em;
     }
+    
 
     .seccion .lista-tecnologias {
         margin-top: 5em;
@@ -557,6 +559,9 @@ button[type="submit"]:hover {
         margin: 1.5em;
     }
 
+    #works h2{
+        font-size: 4em;
+    }
     .seccion .grid {
         display: flex;
         flex-direction: column;
@@ -576,12 +581,16 @@ button[type="submit"]:hover {
         text-align: center;
     }
 
+    #about h2{
+        font-size: 4em;
+    }
+
     .about1 {
-        width: 100%;
+        width: 95%;
     }
 
     .about2 {
-        width: 100%;
+        width: 95%;
     }
 
     body {
