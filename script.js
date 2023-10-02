@@ -2,11 +2,15 @@ const formulario = document.getElementById('contact-form');
 /* Pings a servidor donde se alojan los proyectos que se muestran */
 fetch("https://dota2-6174.onrender.com/api/ping")
     .then(res => res.status)
-    .then(status => console.log(status))
+    .then(status => console.log(status, 'Dota2'))
 
-fetch("https://giphy617.onrender.com/ping")
+fetch("https://giphy617.onrender.com/ping,")
     .then(res => res.status)
-    .then(status => console.log(status))
+    .then(status => console.log(status, ' giphy'))
+
+fetch("https://portf-617-express.onrender.com/ping")
+    .then(res => res.status)
+    .then(status => console.log(status, ' form-mail'))
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
