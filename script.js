@@ -4,7 +4,7 @@ fetch("https://dota2-6174.onrender.com/api/ping")
     .then(res => res.status)
     .then(status => console.log(status, 'Dota2'))
 
-fetch("https://giphy617.onrender.com/ping,")
+fetch("https://giphy617.onrender.com/ping")
     .then(res => res.status)
     .then(status => console.log(status, ' giphy'))
 
