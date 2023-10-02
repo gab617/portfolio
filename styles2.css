@@ -340,6 +340,8 @@ main {
     text-align: center;
 }
 
+
+
 .about .rrss {
     margin-top: 2em;
     width: 100%;
@@ -427,7 +429,7 @@ p {
 
 /* Estilo general del formulario */
 #contact-form {
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -436,12 +438,23 @@ p {
     text-align: center;
 }
 
+#sec-for1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.sec-form1{
+    margin: .1em;
+}
+
 /* Estilo de los campos de entrada y etiquetas */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    font-size: 1em;
 }
 
 input[type="text"],

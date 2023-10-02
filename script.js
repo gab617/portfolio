@@ -1,42 +1,57 @@
 const formulario = document.getElementById('contact-form');
 /* Pings a servidor donde se alojan los proyectos que se muestran */
-fetch ("https://dota2-6174.onrender.com/api/ping")
-.then (res => res.status)
-.then (status => console.log(status))
+fetch("https://dota2-6174.onrender.com/api/ping")
+    .then(res => res.status)
+    .then(status => console.log(status))
 
-fetch ("https://giphy617.onrender.com/ping")
-.then (res => res.status)
-.then (status => console.log(status))
+fetch("https://giphy617.onrender.com/ping")
+    .then(res => res.status)
+    .then(status => console.log(status))
 
-formulario.addEventListener('submit', async (event) => {
+formulario.addEventListener('submit', (event) => {
     event.preventDefault();
-    
-    const formData = new FormData(formulario);
-    const data = {};
 
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-    console.log('DATA DESDE FRONT ',data)
+    /*     const formData = new FormData(formulario);
+        const data = {};
+    
+            formData.forEach((value, key) => {
+            data[key] = value;
+        });
+     */
+    console.log('RECIBIENDO')
+    const name = document.getElementById('name').value
+    const addresse = document.getElementById('addresse').value
+    const subject = document.getElementById('subject').value
+    const message = document.getElementById('message').value
+
+    const formData = {
+        name: name,
+        addresse: addresse,
+        subject: subject,
+        message: message
+    };
+
+    console.log('DATA DESDE FRONT ', formData)
+
     try {
-        const response = await fetch('http://localhost:3001/guardar-datos', {
+        fetch('https://portf-617-express.onrender.com/enviar-correo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data),
-        });
-
-        if (response.ok) {
-            console.log('Datos enviados');
-            console.log(response.status)
-            formulario.reset();
-        } else {
-            console.error('Error al enviar los datos al servidor.');
-        }
-    } catch (error) {
-        console.error('Error de red: :DDDDDD', error);
+            body: JSON.stringify(formData),
+        })
+            .then((response) => response.text())
+            .then((data) => {
+                console.log(data); // Muestra la respuesta del servidor (éxito o error)
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    } catch {
+        console.error('Error en try, error')
     }
+    formulario.reset()
 });
 
 
