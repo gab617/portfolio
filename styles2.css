@@ -204,13 +204,22 @@ main {
     /* Agrega un fondo para resaltar el espacio equitativo */
 }
 
-#inicio>section>ul.ul.lista-tecnologias>li:nth-child(5) {
+.seccion .lista-tecnologias .express-img {
+    
     background-color: rgba(255, 255, 255, 0.973);
     /* Fondo con luz tenue */
     border-radius: 100px;
     /* Borde redondeado */
     box-shadow: rgb(188, 14, 14);
     /* Sombra para destacar */
+}
+
+.seccion .lista-tecnologias .git-li{
+    margin-right: .8em;
+}
+.seccion .lista-tecnologias .git-li img{
+    background-color: rgba(209, 255, 254, 0.986);
+    border-radius: 80%;
 }
 
 .seccion .lista-tecnologias li img {
