@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.status)
             .then(() => {
                 loaders[proyectoIndex].style.display = "none";
+                console.log(`ping-render-work ${URLSRNDER[proyectoIndex]}`  )
             })
             .catch((e) => {
                 console.error(e, "ERROR")
                 loaders[proyectoIndex].style.display = "block"
             })
     }
-    console.log(loaders)
 
     const promesas = [0, 1, 2].map((proyectoIndex) => cargarProyecto(proyectoIndex))
 
