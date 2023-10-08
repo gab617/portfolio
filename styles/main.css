@@ -1,0 +1,231 @@
+main {
+    margin: 0 0 1em;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.seccion {
+    /* width: 100%; */
+    min-height: 70vh;
+    margin: 1em 0;
+    padding: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.seccion .info {
+    font-size: 1.2;
+    animation: aparecer1 2s ease 1 both;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion .ul {
+    /* background: red; */
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion .ul .li {
+    /* background: yellowgreen; */
+    margin: 0 1em;
+}
+
+.seccion .ul .li .a {
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+    animation: aparecer1 2s ease 1 backwards;
+}
+
+.seccion .ul>:nth-child(2) .a {
+    /* Esto selecciona el segundo hijo directo de cualquier elemento que coincida con el selector anterior (en este caso, ".ul") */
+    animation-delay: .2s;
+}
+
+.seccion .ul .li .a:hover {
+    background: black;
+    color: white;
+}
+
+.seccion .lista-tecnologias {
+    margin-top: 12em;
+    list-style: none;
+    width: 50%;
+    /* Distribuir espacio equitativamente entre los elementos li */
+}
+
+.seccion .lista-tecnologias li {
+    flex: 1;
+    /* Hace que todos los elementos li ocupen el mismo espacio equitativamente */
+    text-align: center;
+    /* Agrega un fondo para resaltar el espacio equitativo */
+}
+
+.seccion .lista-tecnologias .express-img {
+
+    background-color: rgba(255, 255, 255, 0.973);
+    /* Fondo con luz tenue */
+    border-radius: 100px;
+    /* Borde redondeado */
+    box-shadow: rgb(188, 14, 14);
+    /* Sombra para destacar */
+}
+
+.seccion .lista-tecnologias .git-li {
+    margin-right: .8em;
+}
+
+.seccion .lista-tecnologias .git-li img {
+    background-color: rgba(209, 255, 254, 0.986);
+    border-radius: 80%;
+}
+
+.seccion .lista-tecnologias li img {
+    width: 50%;
+}
+
+
+.seccion .h2 {
+    font-weight: 600;
+    font-size: 5em;
+}
+
+.seccion .h3 {
+    font-size: 4.3em;
+    font-style: italic;
+}
+
+
+.seccion .grid {
+    width: 90%;
+    margin: 1em 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1em;
+}
+
+.seccion .article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.seccion .img {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion .h4 {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.4em;
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translateZ(1) scale(1.2);
+    /* EVITA SHOCK */
+    font-style: italic;
+}
+
+.seccion .article {
+    border-radius: 5%;
+}
+
+.seccion .article:hover h4 {
+    opacity: 1;
+    transform: translateZ(1) scale(1);
+}
+
+@media screen and (max-width: 1500px) {
+    .seccion {
+        min-height: 70vh;
+    }
+
+    .section .h2 {
+        font-size: 4.2em;
+    }
+
+    .seccion .lista-tecnologias {
+        margin-top: 5em;
+        width: 65%;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .seccion {
+        min-height: 70vh;
+        text-align: center;
+    }
+
+    .section .h2 {
+        font-size: 1em;
+    }
+
+
+    .seccion .lista-tecnologias {
+        margin-top: 5em;
+        width: 95%;
+        height: auto;
+    }
+
+    .seccion .ul .li {
+        margin: 1.5em;
+    }
+
+    #works h2 {
+        font-size: 4em;
+    }
+
+    .seccion .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion .grid p {
+        margin: 0;
+    }
+
+    
+
+    body {
+        background-image: linear-gradient(to right, rgba(68, 0, 255, 0.43), rgba(150, 3, 163, 0.439));
+    }
+
+    .circulo {
+        display: none;
+    }
+}

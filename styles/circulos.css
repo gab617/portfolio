@@ -1,0 +1,54 @@
+.circulos {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.circulos .circulo {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    filter: blur(60px);
+    animation: circulo1 8s ease infinite both;
+}
+
+
+.circulos .circulo1 {
+    top: 0%;
+    left: 0%;
+}
+
+
+.circulos .circulo2 {
+    top: 0%;
+    right: 0%;
+}
+
+.circulos .circulo3 {
+    bottom: 0%;
+    left: 0%;
+}
+
+.circulos .circulo4 {
+    bottom: 0%;
+    right: 0%;
+}
+
+.circulos .circulo1 .path {
+    fill: rgb(84, 19, 19);
+}
+
+.circulos .circulo2 .path {
+    fill: rgb(171, 13, 228);
+}
+
+.circulos .circulo3 .path {
+    fill: rgb(74, 182, 74);
+}
+
+.circulos .circulo4 .path {
+    fill: rgb(87, 142, 197);
+}

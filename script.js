@@ -1,17 +1,50 @@
+/* Pingsa servidor donde se alojan los proyectos que se muestran */
+const URLSRNDER = ["https://dota2-6174.onrender.com/api/ping", "https://giphy617.onrender.com/ping", "https://portf-617-express.onrender.com/ping"]
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loaders = document.querySelectorAll(".loader");
+    // Función para cargar un proyecto
+    function cargarProyecto(proyectoIndex) {
+        return fetch(`${URLSRNDER[proyectoIndex]}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Error en la solicitud: ${response.status}`);
+                }
+                return response;
+            })
+            .then((response) => response)
+            .then(res => res.status)
+            .then(() => {
+                loaders[proyectoIndex].style.display = "none";
+            })
+            .catch((e) => {
+                console.error(e, "ERROR")
+                loaders[proyectoIndex].style.display = "block"
+            })
+    }
+    console.log(loaders)
+
+    const promesas = [0, 1, 2].map((proyectoIndex) => cargarProyecto(proyectoIndex))
+
+
+    // Mostrar el loader hasta que todas las promesas se resuelvan
+    /*     Promise.all(promesas)
+            .then(() => {
+                // Ocultar el loader cuando todas las promesas se han resuelto
+                loaders.forEach((loader) => {
+                    console.log(loader, "FOREACH")
+                    loader.style.display = 'block'
+                })
+            })
+            .catch((error) => {
+                console.error("Error al cargar proyectos:", error);
+            }); */
+})
+
+
 const formulario = document.getElementById('contact-form');
-/* Pings a servidor donde se alojan los proyectos que se muestran */
-fetch("https://dota2-6174.onrender.com/api/ping")
-    .then(res => res.status)
-    .then(status => console.log(status, 'Dota2'))
-
-fetch("https://giphy617.onrender.com/ping")
-    .then(res => res.status)
-    .then(status => console.log(status, ' giphy'))
-
-fetch("https://portf-617-express.onrender.com/ping")
-    .then(res => res.status)
-    .then(status => console.log(status, ' form-mail'))
-
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
 

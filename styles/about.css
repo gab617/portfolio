@@ -1,0 +1,92 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .rrss {
+    margin-top: 2em;
+    width: 100%;
+    /* background: lightgreen; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .svg {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+    /* background: red; */
+}
+
+#about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+.about1 {
+    width: 50%;
+    height: 100%;
+    margin: 1.5em;
+}
+
+.about1 li,
+p {
+    font-size: 2em;
+    margin-top: 0;
+
+
+}
+
+.about2 {
+    height: 100%;
+    width: 50%;
+    margin: 1.5em;
+}
+
+.about2 p {
+    font-size: 1.9em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 996px) {
+    .seccion .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-text {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #about-text {
+        display: flex;
+        flex-direction: column;
+        font-size: .5em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 4em;
+    }
+
+    .about1 {
+        width: 95%;
+    }
+
+    .about2 {
+        width: 95%;
+    }
+}

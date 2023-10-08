@@ -1,0 +1,47 @@
+header {
+    min-width: 5em;
+    padding: 1em 2em;
+    display: flex;
+    flex-grow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    /* display: none; */
+
+}
+
+header .h1 {}
+
+header .h1 .a {
+    color: white;
+}
+
+header .nav {}
+
+header .nav .ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 5%;
+}
+
+header .img {
+    width: 100%;
+}
+
+
+header .nav .ul .li {
+    margin: 0 1em;
+}
+
+header .nav .ul .li .a {
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,87 @@
+/* Estilo general del formulario */
+#contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#sec-for1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.sec-form1 {
+    margin: .1em;
+}
+
+/* Estilo de los campos de entrada y etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para un mensaje de éxito */
+.success-message {
+    color: #009900;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 445px) {
+    .sec-form1{
+        width: 60%;
+    }
+    .sec-form1 input{
+        width: 85%;
+    }
+}
