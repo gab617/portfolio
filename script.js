@@ -3,6 +3,20 @@ const URLSRNDER = ["https://dota2-6174.onrender.com/api/ping", "https://giphy617
 
 
 
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const loaders = document.querySelectorAll(".loader");
     // Función para cargar un proyecto
@@ -47,14 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const formulario = document.getElementById('contact-form');
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    /*     const formData = new FormData(formulario);
-        const data = {};
     
-            formData.forEach((value, key) => {
-            data[key] = value;
-        });
-     */
     console.log('RECIBIENDO')
     const name = document.getElementById('name').value
     const addresse = document.getElementById('addresse').value

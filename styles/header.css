@@ -1,24 +1,25 @@
 header {
-    min-width: 5em;
+    width: 87%;
     padding: 1em 2em;
     display: flex;
-    flex-grow: row wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 100;
     background: rgba(0, 0, 0, 0.6);
     /* display: none; */
+    position: fixed;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-header .h1 {}
 
 header .h1 .a {
     color: white;
 }
 
-header .nav {}
 
 header .nav .ul {
     list-style: none;

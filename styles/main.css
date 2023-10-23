@@ -1,5 +1,6 @@
 main {
-    margin: 0 0 1em;
+    margin: 8em 0 1em;
+    width: 100%;
     text-align: center;
     position: relative;
     z-index: 2;
