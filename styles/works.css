@@ -23,6 +23,7 @@
     /* Centra el contenido horizontalmente */
     text-align: center;
     /* Centra el contenido del artículo */
+    border-radius: 1em;
 }
 
 
