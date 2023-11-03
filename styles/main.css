@@ -5,6 +5,8 @@ main {
     position: relative;
     z-index: 2;
     background: rgba(0, 0, 0, 0.6);
+    font-family: Verdana;
+    font-family: 'PT Sans';
 }
 
 .seccion {
