@@ -42,6 +42,16 @@
     /* Agrega espacio entre el artículo y el encabezado h2 */
 }
 
+@media screen and (max-width: 550px){
+    .article-contendor{
+        padding: .4em;
+    }
+    .article-contendor .article{
+        margin:0;
+    }
+
+}
+
 @media screen and (max-width: 1500px){
     .article-contendor {
         flex-flow: column;

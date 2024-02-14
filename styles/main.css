@@ -251,8 +251,12 @@ main {
 
     .seccion .grid p {
         margin: 0;
+        font-size: .9em;
     }
 
+    .seccion .article{
+        width: 100%;
+    }
     
 
     body {
