@@ -40,7 +40,7 @@ header .img {
     opacity: .3;
 }
 
-header .img:hover{
+header .img:hover {
     opacity: 1;
 }
 
@@ -52,4 +52,28 @@ header .nav .ul .li {
 header .nav .ul .li .a {
     color: white;
     cursor: pointer;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+    transition: background-color 0.5s ease
+}
+
+header .nav .ul .li .a:hover {
+    background: rgba(255, 255, 255, 0.76);
+    color: black;
+
+}
+
+@media screen and (max-width: 550px) {
+    header .nav .ul .li .a {
+        padding: 0;
+        border-top: 0;
+        box-shadow: initial;
+        font-weight: 500;
+        font-size: .9em;
+    }
+
+
 }
