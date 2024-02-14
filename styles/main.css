@@ -240,7 +240,10 @@ main {
     }
 
 
-
+    #works .h2 {
+        font-size: 3em;
+    
+    }
 
     .seccion .grid {
         display: flex;
@@ -267,10 +270,7 @@ main {
 }
 
 @media screen and (max-width: 365px){
-    #works .h2 {
-        font-size: 3em;
-    
-    }
+
     .seccion .lista-tecnologias{
         margin-top: 3em;
         gap: 0;
