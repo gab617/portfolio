@@ -214,6 +214,10 @@ main {
         font-size: 1em;
     }
 
+    .section .h3{
+        font-size: 2em;
+    }
+
     .seccion .ul .li .a{
         border-radius: 0;
     }
@@ -236,12 +240,7 @@ main {
     }
 
 
-    label{
-        color: wheat;
-    }
-    #works h2 {
-        font-size: 4em;
-    }
+
 
     .seccion .grid {
         display: flex;
@@ -264,5 +263,17 @@ main {
         display: none;
     }
 
+
+}
+
+@media screen and (max-width: 365px){
+    #works .h2 {
+        font-size: 3em;
+    
+    }
+    .seccion .lista-tecnologias{
+        margin-top: 3em;
+        gap: 0;
+    }
 
 }
