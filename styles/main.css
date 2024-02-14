@@ -1,5 +1,5 @@
 main {
-    margin: 8em 0 1em;
+    margin: 3.2em 0 1em;
     width: 100%;
     text-align: center;
     position: relative;
@@ -47,6 +47,7 @@ main {
 
 .seccion .ul .li .a {
     color: white;
+    background: rgba(0, 0, 0, 0.452);
     border-top: 1px solid rgba(0, 0, 0, 0.7);
     padding: 1em 1em 1em;
     text-transform: uppercase;
@@ -62,8 +63,8 @@ main {
 }
 
 .seccion .ul .li .a:hover {
-    background: rgba(0, 0, 0, 0.438);
-    color: white;
+    background: rgba(255, 255, 255, 0.438);
+    color: rgb(0, 0, 0);
 }
 
 .seccion .lista-tecnologias {
@@ -199,9 +200,7 @@ main {
         padding: .5em;
     }
 
-    header .logo{
-        width: 20%;
-    }
+
     .seccion {
         min-height: 70vh;
         text-align: center;

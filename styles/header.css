@@ -1,18 +1,15 @@
 header {
-    width: 87%;
-    padding: 1em 2em;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     z-index: 100;
     background: rgba(0, 0, 0, 0.6);
     /* display: none; */
     position: fixed;
-    top: 5em;
+    top: 1.9em;
     left: 50%;
     transform: translate(-50%, -50%);
-
 
 }
 
@@ -20,7 +17,6 @@ header {
 header .h1 .a {
     color: white;
 }
-
 
 header .nav .ul {
     list-style: none;
@@ -31,13 +27,15 @@ header .nav .ul {
 }
 
 header .logo {
-    width: 8em;
+    width: 3.6em;
+    margin-left: 1em;
+    margin-top: .2em;
 }
 
 header .img {
     width: 100%;
     border-radius: 50%;
-    opacity: .3;
+    opacity: .9;
 }
 
 header .img:hover {
@@ -53,7 +51,7 @@ header .nav .ul .li .a {
     color: white;
     cursor: pointer;
     border-top: 1px solid rgba(0, 0, 0, 0.7);
-    padding: 1em 1em 1em;
+    padding: .6em .6em .6em;
     text-transform: uppercase;
     font-weight: 600;
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
@@ -73,6 +71,9 @@ header .nav .ul .li .a:hover {
         box-shadow: initial;
         font-weight: 500;
         font-size: .9em;
+    }
+
+    header .logo{
     }
 
 

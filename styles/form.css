@@ -4,10 +4,12 @@
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(114, 15, 243, 0.103);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+
 }
+
 
 #sec-for1 {
     display: flex;
@@ -24,7 +26,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #eee7e7;
     font-size: 1em;
 }
 
@@ -35,9 +37,9 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #2f1be436;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 .message {
@@ -47,7 +49,7 @@ textarea {
 
 /* Estilo para el botón de enviar */
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #4400ff5d;
     color: #fff;
     padding: 10px 20px;
     border: none;
