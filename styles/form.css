@@ -78,10 +78,20 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 445px) {
-    .sec-form1{
+    label {
+        color: rgb(155, 148, 148);
+        
+    }
+
+    .sec-form1 {
         width: 60%;
     }
-    .sec-form1 input{
+
+    .sec-form1 input {
         width: 85%;
+    }
+
+    #contact-form {
+        background-color: rgba(255, 255, 255, 0.034);
     }
 }

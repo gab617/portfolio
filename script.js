@@ -1,10 +1,13 @@
+/* fetch("http://localhost:8080/usuarios")
+    .then(res => res.json())
+    .then(json = console.log(json))
+    .catch(console.log('error')) */
+
 /* Pingsa servidor donde se alojan los proyectos que se muestran */
 const URLSRNDER = ["https://dota2-6174.onrender.com/api/ping", "https://giphy617.onrender.com/ping", "https://portf-617-express.onrender.com/ping"]
 
-
-
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1);
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.status)
             .then(() => {
                 loaders[proyectoIndex].style.display = "none";
-                console.log(`ping-render-work ${URLSRNDER[proyectoIndex]}`  )
+                console.log(`ping-render-work ${URLSRNDER[proyectoIndex]}`)
             })
             .catch((e) => {
                 console.error(e, "ERROR")
@@ -42,26 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const promesas = [0, 1, 2].map((proyectoIndex) => cargarProyecto(proyectoIndex))
 
-
-    // Mostrar el loader hasta que todas las promesas se resuelvan
-    /*     Promise.all(promesas)
-            .then(() => {
-                // Ocultar el loader cuando todas las promesas se han resuelto
-                loaders.forEach((loader) => {
-                    console.log(loader, "FOREACH")
-                    loader.style.display = 'block'
-                })
-            })
-            .catch((error) => {
-                console.error("Error al cargar proyectos:", error);
-            }); */
 })
 
 
 const formulario = document.getElementById('contact-form');
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
-    
+
     console.log('RECIBIENDO')
     const name = document.getElementById('name').value
     const addresse = document.getElementById('addresse').value
@@ -97,6 +87,7 @@ formulario.addEventListener('submit', (event) => {
     }
     formulario.reset()
 });
+
 
 
 

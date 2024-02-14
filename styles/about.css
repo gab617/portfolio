@@ -25,16 +25,15 @@
 
 #about-text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 90%;
+    text-align: start;
 }
 
 .about1 {
-    width: 50%;
     height: 100%;
     margin: 1.5em;
+    width: 65%;
 }
 
 .about1 li,
@@ -47,8 +46,8 @@ p {
 
 .about2 {
     height: 100%;
-    width: 50%;
     margin: 1.5em;
+    width: 65%;
 }
 
 .about2 p {
