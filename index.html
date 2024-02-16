@@ -3,11 +3,6 @@
 
 <head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio's gab</title>
@@ -20,6 +15,7 @@
     <link rel="stylesheet" href="/styles/about.css">
     <link rel="stylesheet" href="/styles/form.css">
     <link rel="stylesheet" href="/styles/loader.css">
+    <link rel="stylesheet" href="/styles/desc-works.css">
 </head>
 
 <body>
@@ -98,22 +94,40 @@
                     <article class="article">
                         <a class="a" href="https://giphy-react-front-617.vercel.app/" title="go to giphy project"
                             target="_blank">
-                            <img src="assets/giph1.png" alt="Imagen" class="img" loading="lazy">
+                            <img src="assets/dota.png" alt="Imagen" class="img" loading="lazy">
+
                             <h4 class="h4">GIPHY</h4>
+
                         </a>
+
                     </article>
-                    <p>
-                        Frontend: Desarrollado con React. <br>
-                        Backend: Utiliza Express para la gestión de solicitudes.<br>
-                        Comunicación: Integracion a la API de Giphy.<br>
-                        Enfoque: Proporciona una experiencia de búsqueda de gifs.<br>
-                        Asi como tambien manejo de peticiones, props enviadas por peticiones. Y Cantidad de datos que se
-                        piden al servidor
-                    </p>
+
+                    <div class="description-work">
+                        <div class="desc-txt">
+                            <h1>
+                                GIPHY
+                            </h1>
+                            <p>
+                                React: Componetización, efectos, hooks, contexto, vite, npm. <br>
+                                
+                                Express: Integracion a api principal de giphy, donde envio y recibo solicites con peticiones y respuestas. <br>
+                                Estilos: Cascada.
+                                
+                                <br><br>
+
+
+                                Enfoque: Controlar los datos recibidos en un .json para darle un orden dentro de la interfaz, control del espacio y reparto de las secciones. <br>
+                                Lograr conexiones con una aplicacion externa, la cual a su vez trabaja sobre algo de terceros para filtrar los datos necesarios para completar los componentes que se crean y se modifican a lo largo del funcionamiento de la app.
+                            </p>
+                            
+                        </div>
+                    </div>
+
                     <div class="loader" title="Solicitando datos al servidor del proyecto">
                         <div class="loader-wheel"></div>
                         <div class="loader-text"></div>
                     </div>
+
                 </div>
 
                 <div class="article-contendor">
@@ -124,14 +138,32 @@
                             <h4 class="h4">Dota2 APP</h4>
                         </a>
                     </article>
-                    <p>
-                        Frontend: Desarrollado con React. <br>
-                        Backend: Utiliza Express para la gestión de solicitudes.<br>
-                        Comunicación: Realiza peticiones HTTP a una API definida por mi.<br>
-                        Los datos están guardados en un servidor externo.<br>
-                        Enfoque: Organización, filtrado y renderizado organizado de datos según su categoría.<br>
 
-                    </p>
+                    <div class="description-work">
+                        <div class="desc-txt">
+
+                            <h1>
+                                DOTA2APP
+                            </h1>
+                            <p>
+                                React: Componetización, Manejo de estados, contexto(Estados y funciones globales), props, efectos, hooks <br>
+                                Express: Trabaja en paralelo un servidor express, el cual contiene cada json de los datos inidivuales para cada personaje disponible en la aplicacion.<br>
+                                Comunicación: Realiza peticiones fetch a una API complementaria. Desplejada independiente de el cliente
+                                
+                                <br> <br>
+                                
+                                
+                                Enfoque: Organización, filtrado y renderizado organizado de datos según categorias.<br>
+                                Manejo de asincrinismo y sus errores.
+
+
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
                     <div class="loader" title="Solicitando datos al servidor del proyecto">
                         <div class="loader-wheel"></div>
                         <div class="loader-text"></div>
@@ -146,22 +178,38 @@
                             <h4 class="h4">Cozzuol page</h4>
                         </a>
                     </article>
-                    <p>
-                        Readaptación a React de pagina web industrial.<br>
-                        <br>
-                        <br>
-                        Enfoque: Maquetar una web echa con una tecnología diferente y readaptarla a React<br>
-                        Agregado de funcionalidades y renderizados independientes según se lo requiera.
-                        Practica de estilos.<br><br>
-                        Con diseño responsive.
-                    </p>
+
+                    <div class="description-work">
+                        <div class="desc-txt">
+                            <h1>
+                                Diseño/industria.
+                            </h1>
+                            <p> 
+                                Posee diseño responsive.
+                                Maquetado en react.
+                                <br>
+                                Manejo de los datos via archivos .json. <br>
+                                urls de recursos(imagenes, textos por componentes, titulos, links) <br>
+                                Separado en componentes via path (wouter)
+                                Navegacion y exploración intuitiva para recorrer las distintas secciones de información. <br>
+
+                                
+
+                                <br>
+                                (Adaptación de vanilla a React)
+                                <br>
+                            </p>
+                        </div>
+
+
+                    </div>
+
                     <div class="loader" title="Solicitando datos al servidor del proyecto">
                         <div class="loader-wheel"></div>
                         <div class="loader-text"></div>
                     </div>
-                </div>
 
-            </div>
+                </div>
         </section>
 
         <section class="seccion about" id="about">
