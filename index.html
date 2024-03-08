@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/styles/form.css">
     <link rel="stylesheet" href="/styles/loader.css">
     <link rel="stylesheet" href="/styles/desc-works.css">
+    <link rel="stylesheet" href="/styles/list-tec.css">
+    <link rel="stylesheet" href="/styles/hero.css">
 </head>
 
 <body>
@@ -60,26 +62,34 @@
     <main class="main">
         <div class="seccion" id="inicio">
 
-            <section class="section info">
+            <section id="hero">
                 <h2 class="h2">Gabriel Cabrera Sirlopu</h2>
                 <h3 class="h3">Developer</h3>
 
                 <ul class="ul">
                     <li class="li"><a href="https://www.linkedin.com/in/gabriel-cabrera-sirlopu-0a5700267/" class="a"
-                            title="Linkedin" target="_blank">Linkedin</a></li>
+                            title="Linkedin" target="_blank">Linkedin</a>
+                        </li>
                     <li class="li"><a href="https://github.com/gab617" class="a" title="Github"
                             target="_blank">Github</a>
                     </li>
                 </ul>
 
-                <ul class="ul lista-tecnologias">
-                    <li><img src="assets/html-icon.png" alt="img html"></li>
+                <ul class="lista-tecnologias">
+                    <li>
+                        <img class="img-icon" src="assets/html-icon.png" alt="img html">
+                    </li>
+
                     <li><img src="assets/css-icon.png" alt="img css"></li>
+
                     <li><img src="assets/js-icon.png" alt="img js"></li>
+
                     <li><img src="assets/react-icon.png" alt="img react"></li>
+
                     <li class="git-li"><img src="assets/github-logo.png" alt=""></li>
+                    
                     <li class="express-img"><img src="assets/express-icon.png" alt="img express"></li>
-                </ul>
+                </ul>       
             </section>
 
         </div>
@@ -101,10 +111,10 @@
                     <div class="description-work">
                         <div class="desc-txt">
                             <h1>
-                                Diseño/industria. 
+                                Diseño/industria.
                             </h1>
                             <p>
-                                <br> 
+                                <br>
                                 Posee diseño responsive.
                                 Maquetado en React.
                                 <br>
@@ -114,18 +124,15 @@
                                 Navegación y exploración intuitiva para recorrer las distintas secciones de información.
                                 <br>
 
-                                
                                 <br>
                                 (Adaptación de vanilla a React)
                                 <br>
                                 <br>
-                                Estilos redefinidos y creacion de diseño responsive, la pagina original no disponia de tal, sin agregar recursos, reutilizando lo existente.
+                                Estilos redefinidos y creacion de diseño responsive, la pagina original no disponia de
+                                tal, sin agregar recursos, reutilizando lo existente.
                                 <br>
                             </p>
-
                         </div>
-
-
                     </div>
 
                     <div class="loader" title="Solicitando datos al servidor del proyecto">
@@ -153,7 +160,7 @@
                                 GIPHY
                             </h1>
                             <p>
-                                <br> 
+                                <br>
                                 React: Componentización, efectos, hooks, contexto, Vite, npm. <br>
                                 Express: Integración a la API principal de Giphy, donde envío y recibo solicitudes con
                                 peticiones y respuestas. <br>
@@ -165,7 +172,6 @@
                                 terceros para filtrar los datos necesarios para completar los componentes que se crean y
                                 se modifican a lo largo del funcionamiento de la app.
                             </p>
-
                         </div>
                     </div>
 
@@ -180,11 +186,10 @@
                     <article class="article">
                         <a class="a" href="https://dota2-app-front-617.vercel.app/" title="go to dota2App project"
                             target="_blank">
-                            <img src="assets/dota.png" alt="Imagen" class="img" loading="lazy">
+                            <img src="assets/dota2app.png" alt="Imagen" class="img" loading="lazy">
                             <h4 class="h4">Dota2 APP</h4>
                         </a>
                     </article>
-
                     <div class="description-work">
                         <div class="desc-txt">
 
@@ -192,7 +197,7 @@
                                 DOTA2APP
                             </h1>
                             <p>
-                                <br> 
+                                <br>
                                 React: Componentización, Manejo de estados, contexto (Estados y funciones globales),
                                 props, efectos, hooks <br>
                                 Express: Trabaja en paralelo un servidor Express, el cual contiene cada JSON de los
@@ -207,9 +212,6 @@
                         </div>
 
                     </div>
-
-
-
                     <div class="loader" title="Solicitando datos al servidor del proyecto">
                         <div class="loader-wheel"></div>
                         <div class="loader-text"></div>
@@ -236,8 +238,6 @@
                         completo, en este caso una aplicación web, junto con sus derivados.</p>
                 </div>
             </div>
-
-
             <ul class="rrss">
                 <li class="li">
                     <a href="https://github.com/gab617" class="a" title="link-github" target="_blank"

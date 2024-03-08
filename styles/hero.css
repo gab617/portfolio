@@ -1,0 +1,42 @@
+#hero {
+    animation: aparecer1 2s ease 1 both;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#hero .ul{
+    margin-top: 5em;
+    display: flex;
+}
+
+#hero .ul .li {
+    /* background: yellowgreen; */
+    margin: 0 1em;
+}
+
+#hero .ul .li .a {
+    color: white;
+    background: rgba(0, 0, 0, 0.452);
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+    animation: aparecer1 2s ease 1 backwards;
+}
+
+#hero .ul>:nth-child(2) .a {
+    /* Esto selecciona el segundo hijo directo de cualquier elemento que coincida con el selector anterior (en este caso, ".ul") */
+    animation-delay: .2s;
+}
+
+#hero .ul .li .a:hover {
+    background: rgba(255, 255, 255, 0.438);
+    color: rgb(0, 0, 0);
+}
+
+

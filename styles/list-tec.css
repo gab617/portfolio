@@ -1,0 +1,53 @@
+.lista-tecnologias {
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10em;
+    list-style: none;
+    width: 60%;
+}
+
+.lista-tecnologias .txt-tec {
+    opacity: 0.2;
+}
+
+
+.lista-tecnologias .img-icon:hover+.lista-tecnologias .img-icon{
+    color: blue;
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.lista-tecnologias li {
+    flex: 1;
+    /* Hace que todos los elementos li ocupen el mismo espacio  */
+    text-align: center;
+    /* Agrega un fondo para resaltar el espacio equitativo */
+
+}
+
+.lista-tecnologias .express-img {
+
+    background-color: rgba(255, 255, 255, 0.973);
+    /* Fondo con luz tenue */
+    border-radius: 100px;
+    /* Borde redondeado */
+    box-shadow: rgb(188, 14, 14);
+    /* Sombra para destacar */
+}
+
+.lista-tecnologias .git-li {
+    margin-right: .8em;
+}
+
+.lista-tecnologias .git-li img {
+    background-color: rgba(209, 255, 254, 0.986);
+    border-radius: 80%;
+}
+
+.lista-tecnologias li img {
+    width: 50%;
+}

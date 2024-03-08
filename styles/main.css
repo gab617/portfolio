@@ -6,6 +6,7 @@ main {
     z-index: 2;
     background: rgba(0, 0, 0, 0.6);
     font-size: 1.2em;
+    
 }
 
 
@@ -20,89 +21,6 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-.seccion .info {
-    font-size: 1.2;
-    animation: aparecer1 2s ease 1 both;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.seccion .ul {
-    /* background: red; */
-    margin: 2em 0 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.seccion .ul .li {
-    /* background: yellowgreen; */
-    margin: 0 1em;
-}
-
-.seccion .ul .li .a {
-    color: white;
-    background: rgba(0, 0, 0, 0.452);
-    border-top: 1px solid rgba(0, 0, 0, 0.7);
-    padding: 1em 1em 1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .5s ease;
-    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
-    animation: aparecer1 2s ease 1 backwards;
-}
-
-.seccion .ul>:nth-child(2) .a {
-    /* Esto selecciona el segundo hijo directo de cualquier elemento que coincida con el selector anterior (en este caso, ".ul") */
-    animation-delay: .2s;
-}
-
-.seccion .ul .li .a:hover {
-    background: rgba(255, 255, 255, 0.438);
-    color: rgb(0, 0, 0);
-}
-
-.seccion .lista-tecnologias {
-    margin-top: 10em;
-    list-style: none;
-    width: 60%;
-    /* Distribuir espacio equitativamente entre los elementos li */
-}
-
-.seccion .lista-tecnologias li {
-    flex: 1;
-    /* Hace que todos los elementos li ocupen el mismo espacio  */
-    text-align: center;
-    /* Agrega un fondo para resaltar el espacio equitativo */
-
-}
-
-.seccion .lista-tecnologias .express-img {
-
-    background-color: rgba(255, 255, 255, 0.973);
-    /* Fondo con luz tenue */
-    border-radius: 100px;
-    /* Borde redondeado */
-    box-shadow: rgb(188, 14, 14);
-    /* Sombra para destacar */
-}
-
-.seccion .lista-tecnologias .git-li {
-    margin-right: .8em;
-}
-
-.seccion .lista-tecnologias .git-li img {
-    background-color: rgba(209, 255, 254, 0.986);
-    border-radius: 80%;
-}
-
-.seccion .lista-tecnologias li img {
-    width: 50%;
 }
 
 
